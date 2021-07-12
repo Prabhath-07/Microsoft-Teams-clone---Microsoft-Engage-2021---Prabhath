@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microsoft Teams</title>
+</head>
+
+<body>
+    <div class="teams-wrapper">
+        <h3>Microsoft Teams</h3>
+        <div class="teams-container">
+            <div class="signin-logo">
+                <img src="images/teams.JPG" alt="" height="250px" width="300px">
+            </div>
+
+            <div class="signin-title">
+                <h2>Enter your work, school, <br>
+                    or Microsoft account.</h2>
+            </div>
+            <div class="signin-container">
+
+                <form action="/login" method="POST">
+                    <% if(locals.messages.success){ %>
+                        <div class="alert alert-success" role="alert">
+                            <%= locals.messages.success %>
+                        </div>
+                        <% } %>
+                            <% if(locals.messages.error){ %>
+                                <div class="alert alert-danger" role="alert">
+                                    <%= locals.messages.error %>
+                                </div>
+                                <% } %>
+                                    <div class="mb-3">
+                                        <label class="form-label">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <ion-icon name="person-circle-outline"></ion-icon>
+                                            </div>
+                                            <input name="username" type="text" class="form-control"
+                                                placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                            </div>
+                                            <input name="password" type="password" class="form-control"
+                                                placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="btn">
+                                        <button id="btn">Sign in</button>
+                                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="teams-details">
+            <p>Not on Teams yet? <span id="learnmore"><a
+                        href="https://www.microsoft.com/en-in/microsoft-teams/teams-for-home?utm_campaign=Collab&utm_source=WebBanner&utm_term=TFL&ocid=OO_TEAMS_CONS_MLGTM_FM_TeamsWebBanners_teams-banners">Learn
+                        More</a></span></p>
+        </div>
+        <a href="/signup" type="button" class="btn-signup">Sign Up</a>
+
+    </div>
+
+</body>
+
+</html>
+<style>
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-rendering: optimizeLegibility;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    body {
+        background: #EDEBE9;
+        padding: 20px 100px 20px;
+
+    }
+
+    .teams-wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .teams-wrapper h3 {
+        color: #6264A7;
+    }
+
+    .teams-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 350px;
+        padding: 30px;
+        border-radius: 3px;
+        background: #fff;
+        box-shadow: 0 10px 10px 0 rgba(153, 153, 153, 0.19), 0 5px 10px 0 rgba(138, 138, 138, 0.24);
+    }
+
+    .signin-logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .signin-title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .signin-title h2 {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .signin-container {
+        padding-top: 20px;
+        text-align: center;
+
+    }
+
+    .signin-input input {
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: none;
+        background: #EDEBE9;
+        position: relative;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        border-radius: px;
+    }
+
+    input {
+        padding-left: 10px;
+        flex: none;
+
+    }
+
+    .btn button {
+        margin-top: 13px;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background: #5255B0 !important;
+        color: #fff !important;
+        outline: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(189, 189, 189);
+
+
+    }
+
+    .classed {
+        border-bottom: 2px solid #5255B0 !important;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    #learnmore a {
+        text-decoration: none;
+        opacity: 0.5;
+        font-weight: 500;
+    }
+
+
+    .teams-details {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    .btn-signup {
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        background: #5255B0;
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 10px 10px 0 rgb(189, 189, 189, 0.19), 0 5px 10px 0 rgba(189, 189, 189, 0.24);
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+
+    @media (max-width: 375px) {
+        body {
+            width: auto;
+            padding: 10px 20px;
+        }
+
+        .teams-container {
+            width: 100%;
+            padding: 10px 15px;
+            margin: 0;
+        }
+    }
+</style>
