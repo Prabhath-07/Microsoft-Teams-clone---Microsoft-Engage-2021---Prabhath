@@ -4,7 +4,7 @@
 1. Clone this repository or download it to your system.
 2. In .env folder put your Mongo URL, for more information refer this [Documentation](https://docs.atlas.mongodb.com/tutorial/create-new-cluster/).
 3. In CLI type the following commands:
-    npm install
+    npm install<br>
     npm start
 4. Open localhost 3000 in your browser.
 
