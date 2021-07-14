@@ -12,7 +12,7 @@
 I have deployed the project on heroku. Here is the [link](https://ms-teams.herokuapp.com/).
 
 ## Video Demo 
-This is the link to video demo: 
+This is the link to video demo: [DEMO](https://drive.google.com/file/d/1IxMbyC3DGRxHXh59aU-n_ZEEJHDpz7ZK/view?usp=sharing)
 
 ## Problem Statement
 To build a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able to connect using the product to have a video conversation.
@@ -65,6 +65,6 @@ I have sub-divided these sprints into many other short sprints which I followed 
 These are found in package.json as well.
 
 ## Contact
-I am open to any suggestions.<br>
+For any queries and suggestions.<br>
 Email: mallavarapusp@gmail.com
 
